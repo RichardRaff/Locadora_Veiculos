@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="379.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Devolução">
+         <font>
+            <Font name="Gabriola" size="60.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="145.0" fitWidth="309.0" layoutX="11.0" layoutY="25.0">
+         <image>
+            <Image url="@../../../../../resources/img/devolucao.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="24.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" />
+      <JFXDatePicker layoutX="63.0" layoutY="207.0" />
+      <JFXTimePicker layoutX="311.0" layoutY="207.0" />
+      <Text layoutX="266.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hora" />
+      <JFXTextField labelFloat="true" layoutX="63.0" layoutY="261.0" promptText="Buscar Veiculos" />
+      <JFXTextField labelFloat="true" layoutX="63.0" layoutY="327.0" promptText="Valor da Diaria" />
+      <JFXTextField labelFloat="true" layoutX="63.0" layoutY="372.0" promptText="Valor Final" />
+      <JFXTextField labelFloat="true" layoutX="312.0" layoutY="302.0" promptText="Buscar Clientes" />
+      <JFXButton layoutX="482.0" layoutY="385.0" text="Voltar" textFill="#e8d108" />
+      <JFXButton layoutX="569.0" layoutY="385.0" text="Devolver" textFill="#19eb0a" />
+      <JFXComboBox labelFloat="true" layoutX="548.0" layoutY="216.0" promptText="Clientes" />
+   </children>
+</AnchorPane>

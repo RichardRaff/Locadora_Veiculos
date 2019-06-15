@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="374.0" stylesheets="@../../../../../resources/css/richard.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.locadoraVeiculos.controller">
+   <children>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="7.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../resources/img/login.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtLogin" labelFloat="true" layoutX="198.0" layoutY="64.0" promptText="Login" />
+      <JFXPasswordField fx:id="txtPwd" labelFloat="true" layoutX="198.0" layoutY="114.0" promptText="Password" />
+      <JFXProgressBar layoutX="-1.0" layoutY="237.0" prefHeight="11.0" prefWidth="374.0" />
+      <JFXButton fx:id="btnCadastrar" layoutX="205.0" layoutY="188.0" text="Cadastrar" textFill="#19eb0a" />
+      <JFXButton fx:id="btnLogin" layoutX="295.0" layoutY="188.0" text="Login" textFill="#19eb0a" />
+      <JFXComboBox labelFloat="true" layoutX="198.0" layoutY="146.0" promptText="Nivel de Acesso" />
+   </children>
+</AnchorPane>

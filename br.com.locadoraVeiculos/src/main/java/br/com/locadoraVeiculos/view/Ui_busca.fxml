@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ExpansionPanel?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="142.0" fitWidth="177.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@../../../../../resources/img/buscar.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="313.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar">
+         <font>
+            <Font name="Gabriola" size="50.0" />
+         </font>
+      </Text>
+      <JFXTextField labelFloat="true" layoutX="35.0" layoutY="210.0" promptText="Buscar Cliente" />
+      <JFXTextField labelFloat="true" layoutX="233.0" layoutY="210.0" promptText="Buscar Veiculo" />
+      <JFXTextField labelFloat="true" layoutX="418.0" layoutY="210.0" promptText="Buscar Funcionario" />
+      <JFXButton layoutX="462.0" layoutY="339.0" text="Voltar" />
+      <ExpansionPanel layoutX="117.0" layoutY="301.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="208.0" fitWidth="209.0" layoutX="15.0" layoutY="19.0">
+         <image>
+            <Image url="@../../../../../resources/img/cadastro-clientes.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="273.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadstro de Clientes">
+         <font>
+            <Font name="Gabriola" size="41.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço">
+         <font>
+            <Font name="Gabriola" size="41.0" />
+         </font>
+      </Text>
+      <Separator prefWidth="200.0" />
+      <Separator layoutX="3.0" layoutY="257.0" prefHeight="25.0" prefWidth="592.0" />
+      <ImageView fitHeight="120.0" fitWidth="216.0" layoutX="6.0" layoutY="323.0">
+         <image>
+            <Image url="@../../../../../resources/img/novo-endereço-pemavel-veículos-809x489.png" />
+         </image>
+      </ImageView>
+      <JFXTextField labelFloat="true" layoutX="277.0" layoutY="89.0" promptText="Nome" />
+      <JFXTextField labelFloat="true" layoutX="277.0" layoutY="137.0" promptText="RG" />
+      <JFXTextField labelFloat="true" layoutX="277.0" layoutY="182.0" promptText="CPF" />
+      <JFXTextField labelFloat="true" layoutX="451.0" layoutY="89.0" promptText="CNH" />
+      <JFXTextField labelFloat="true" layoutX="450.0" layoutY="143.0" promptText="Telefone" />
+      <JFXTextField labelFloat="true" layoutX="251.0" layoutY="298.0" promptText="Rua" />
+      <JFXTextField labelFloat="true" layoutX="251.0" layoutY="358.0" promptText="Bairro" />
+      <JFXComboBox labelFloat="true" layoutX="441.0" layoutY="298.0" promptText="Cidade" />
+      <JFXComboBox labelFloat="true" layoutX="441.0" layoutY="358.0" promptText="Estado" />
+      <JFXButton layoutX="518.0" layoutY="409.0" text="Voltar" textFill="#ffd000" />
+      <JFXButton layoutX="432.0" layoutY="409.0" text="Cadastar" textFill="#75e80a" />
+      <JFXButton layoutX="345.0" layoutY="409.0" text="Atualizar" textFill="#ffea00" />
+      <JFXButton layoutX="251.0" layoutY="409.0" text="Cadastrar" textFill="#ff1500" />
+   </children>
+</AnchorPane>

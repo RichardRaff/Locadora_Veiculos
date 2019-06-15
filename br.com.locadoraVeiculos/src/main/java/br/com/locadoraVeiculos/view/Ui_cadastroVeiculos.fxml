@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="729.0" styleClass="@../../../../../resources/css/richard.css" stylesheets="@../../../../../resources/css/richard.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="477.0" layoutY="38.0" prefHeight="53.0" prefWidth="234.0" text="Cadastro de Veiculos">
+         <font>
+            <Font name="Gabriola" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="198.0" fitWidth="443.0" layoutX="14.0" layoutY="8.0">
+         <image>
+            <Image url="@../../../../../resources/img/carroo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="503.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insira os dados do Veiculo" />
+      <JFXTextField focusColor="#ea0606" labelFloat="true" layoutX="35.0" layoutY="230.0" promptText="Marca" />
+      <JFXTextField focusColor="#ea0606" labelFloat="true" layoutX="35.0" layoutY="302.0" promptText="Placa" />
+      <JFXTextField focusColor="#ea0606" labelFloat="true" layoutX="35.0" layoutY="374.0" promptText="Chassi" />
+      <JFXTextField focusColor="#ea0606" labelFloat="true" layoutX="246.0" layoutY="230.0" promptText="Modelo" />
+      <JFXTextField focusColor="#ea0606" labelFloat="true" layoutX="246.0" layoutY="302.0" promptText="Renavam" />
+      <JFXTextField focusColor="#ea0606" labelFloat="true" layoutX="246.0" layoutY="374.0" promptText="Valor da Diaria" />
+      <JFXTextField focusColor="#ea0606" labelFloat="true" layoutX="457.0" layoutY="230.0" promptText="Cor" />
+      <JFXTextField focusColor="#ea0606" labelFloat="true" layoutX="457.0" layoutY="302.0" promptText="Quilometragem" />
+      <JFXTextField focusColor="#ea0606" labelFloat="true" layoutX="457.0" layoutY="374.0" promptText="Categoria do Veiculo" />
+      <JFXButton layoutX="658.0" layoutY="448.0" text="Voltar" />
+      <JFXComboBox focusColor="#ea0606" labelFloat="true" layoutX="27.0" layoutY="448.0" promptText="Tipo de Combustivel" />
+      <JFXComboBox focusColor="#ea0606" labelFloat="true" layoutX="206.0" layoutY="448.0" promptText="AR Condicionado" />
+      <JFXComboBox focusColor="#ea0606" labelFloat="true" layoutX="365.0" layoutY="448.0" promptText="Nº de Portas" />
+      <JFXComboBox focusColor="#ea0606" labelFloat="true" layoutX="503.0" layoutY="448.0" promptText="Disponibilidade" />
+      <JFXButton layoutX="651.0" layoutY="374.0" text="Cadastar" />
+      <JFXButton layoutX="656.0" layoutY="302.0" text="Atualizar" textFill="#f5b400" />
+      <JFXButton layoutX="656.0" layoutY="230.0" text="Deletar" textFill="#ff1a00" />
+   </children>
+</AnchorPane>
