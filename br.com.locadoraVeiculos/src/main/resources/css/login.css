@@ -1,6 +1,6 @@
-
-
-
+#anchor{
+ -fx-background-color : linear-gradient(#2258A1,#757575,#BFBFBF);
+}
 .title-pane, .title-pane > .label, .menubar
 {
 	-fx-background-color: #2E2E2E;
@@ -56,9 +56,11 @@
 */
 .button
 {
-	-fx-background-radius: 0 0 0 0;
-	-fx-background-color: #2E2E2E;
-	-fx-text-fill: #B3A9A3;
+	-fx-background-radius: 5px;
+	-fx-background-color: white;
+	-fx-text-fill: #11bc66;
+	-fx-min-width: 100px;
+	
 }
 .button:hover
 {
@@ -115,8 +117,8 @@
 }
 .tab-label
 {
-	-fx-text-fill: #000000;	
-	-fx-padding-right: 20;
+	-fx-text-fill: white;	
+	-fx-padding-right: 1;
 }
 .tab-close-button
 {
@@ -146,19 +148,20 @@
 }
 .table-view .column-header .label
 {
-	-fx-text-fill: white;
+	-fx-text-fill: black;
 }
 .combo-box
 {
-	-fx-background-color: #2E2E2E;
-	-fx-border-radius: 0;
-	-fx-background-radius: 0;
+	-fx-background-color: white;
+	-fx-border-radius: 5px;
+	-fx-background-radius: 5;
+	-fx-text-fill: black;
 }
 .text-field
 {
-	-fx-background-color: #2E2E2E;
-	-fx-text-fill: white;
-	-fx-background-radius: 0;
+	-fx-background-color: white;
+	-fx-text-fill: black;
+	-fx-background-radius: 5;
 }
 .spinner, .increment-arrow-button, .decrement-arrow-button
 {
@@ -202,4 +205,41 @@
 .cell:selected
 {
 	-fx-background-color: #F0544C;
+}
+
+.backLocacao
+{	
+	-fx-image: url('/img/vans2.png');
+}
+.backLogin
+{
+	-fx-image: url('/img/login.png');
+}
+.backDevolucao
+{
+	-fx-image: url('/img/devolucao2.png');
+}
+.backCadastroVeiculo
+{
+	-fx-image: url('/img/carro2.png');
+}
+.backCadastroFuncionarios
+{
+	-fx-image: url('/img/cadastro-clientes.png');
+	
+}
+.backBuscar
+{
+	-fx-image: url('/img/buscar2.png');
+}
+.backEndereco{
+	-fx-image: url('/img/endereco2.png');
+}
+.backUser
+{
+	-fx-image: url('/img/user.png');
+}
+.backKey
+{
+	-fx-image: url('/img/key2.png');
 }

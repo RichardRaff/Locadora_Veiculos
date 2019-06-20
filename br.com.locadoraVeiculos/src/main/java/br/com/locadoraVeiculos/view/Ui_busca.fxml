@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.ExpansionPanel?>
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.image.Image?>
@@ -9,23 +8,22 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../resources/css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.locadoraVeiculos.controller.BuscaController">
    <children>
-      <ImageView fitHeight="142.0" fitWidth="177.0" layoutX="14.0" layoutY="14.0">
-         <image>
-            <Image url="@../../../../../resources/img/buscar.jpg" />
-         </image>
-      </ImageView>
-      <Text layoutX="313.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar">
+      <Text fill="WHITE" layoutX="313.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar">
          <font>
             <Font name="Gabriola" size="50.0" />
          </font>
       </Text>
-      <JFXTextField labelFloat="true" layoutX="35.0" layoutY="210.0" promptText="Buscar Cliente" />
-      <JFXTextField labelFloat="true" layoutX="233.0" layoutY="210.0" promptText="Buscar Veiculo" />
-      <JFXTextField labelFloat="true" layoutX="418.0" layoutY="210.0" promptText="Buscar Funcionario" />
-      <JFXButton layoutX="462.0" layoutY="339.0" text="Voltar" />
-      <ExpansionPanel layoutX="117.0" layoutY="301.0" />
+      <JFXTextField labelFloat="true" layoutX="20.0" layoutY="247.0" promptText="Buscar Cliente" />
+      <JFXTextField labelFloat="true" layoutX="233.0" layoutY="247.0" promptText="Buscar Veiculo" />
+      <JFXTextField labelFloat="true" layoutX="419.0" layoutY="247.0" promptText="Buscar Funcionario" />
+      <JFXButton fx:id="btnVoltar" layoutX="462.0" layoutY="339.0" onAction="#voltar" text="Voltar" textFill="#ffc300" />
+      <ImageView fitHeight="224.0" fitWidth="259.0" layoutX="12.0" layoutY="14.0" styleClass="backBuscar">
+         <image>
+            <Image url="@../../../../../resources/img/buscar2.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnBuscar" layoutX="287.0" layoutY="339.0" onAction="#buscar" text="Buscar" />
    </children>
 </AnchorPane>

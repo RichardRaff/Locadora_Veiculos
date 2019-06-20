@@ -29,7 +29,8 @@ public class LocadoraStart extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("../view/Ui_login2.fxml"));
-        Scene scene = new Scene(root, 374, 252);
+        Scene scene = new Scene(root, 477, 356);
+        scene.getStylesheets().add(getClass().getResource("/css/login.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
 		

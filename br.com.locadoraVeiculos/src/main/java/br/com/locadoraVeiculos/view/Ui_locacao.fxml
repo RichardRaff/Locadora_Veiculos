@@ -11,28 +11,28 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="654.0" stylesheets="@../../../../../resources/css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.locadoraVeiculos.controller.LocacaoController">
    <children>
-      <ImageView fitHeight="153.0" fitWidth="349.0" layoutX="14.0" layoutY="14.0">
-         <image>
-            <Image url="@../../../../../resources/img/vans.jpg" />
-         </image>
-      </ImageView>
-      <Text layoutX="379.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Locação">
+      <Text fill="WHITE" layoutX="430.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Locação">
          <font>
             <Font name="Gabriola" size="60.0" />
          </font>
       </Text>
-      <JFXTextField labelFloat="true" layoutX="22.0" layoutY="372.0" promptText="Valor Calção" />
-      <JFXTextField labelFloat="true" layoutX="260.0" layoutY="372.0" promptText="Valor da Diaria" />
-      <JFXTextField labelFloat="true" layoutX="368.0" layoutY="223.0" promptText="Buscar Cliente" />
-      <JFXTimePicker layoutX="16.0" layoutY="283.0" />
-      <JFXDatePicker layoutX="249.0" layoutY="285.0" />
-      <JFXComboBox labelFloat="true" layoutX="16.0" layoutY="235.0" promptText="Veiculo" />
-      <JFXComboBox labelFloat="true" layoutX="22.0" layoutY="181.0" promptText="Modelo" />
-      <JFXComboBox labelFloat="true" layoutX="138.0" layoutY="181.0" promptText="Marca" />
-      <JFXComboBox labelFloat="true" layoutX="556.0" layoutY="223.0" promptText="Clientes" />
-      <JFXButton layoutX="477.0" layoutY="385.0" text="Voltar" textFill="#e8d108" />
-      <JFXButton layoutX="565.0" layoutY="385.0" text="Locar" textFill="#19eb0a" />
+      <JFXTextField fx:id="txtValorCalcao" labelFloat="true" layoutX="22.0" layoutY="372.0" promptText="Valor Calção" />
+      <JFXTextField fx:id="txtValorDiaria" labelFloat="true" layoutX="260.0" layoutY="372.0" promptText="Valor da Diaria" />
+      <JFXTextField fx:id="txtBuscaClient" labelFloat="true" layoutX="368.0" layoutY="223.0" promptText="Buscar Cliente" />
+      <JFXTimePicker fx:id="buscaHora" defaultColor="WHITE" layoutX="16.0" layoutY="283.0" />
+      <JFXDatePicker fx:id="buscaData" defaultColor="WHITE" layoutX="249.0" layoutY="285.0" />
+      <JFXComboBox fx:id="comboVeiculo" labelFloat="true" layoutX="16.0" layoutY="235.0" promptText="Veiculo" />
+      <JFXComboBox fx:id="comboModelo" labelFloat="true" layoutX="22.0" layoutY="181.0" promptText="Modelo" />
+      <JFXComboBox fx:id="comboMarca" labelFloat="true" layoutX="138.0" layoutY="181.0" promptText="Marca" />
+      <JFXComboBox fx:id="comboBuscaCliente" labelFloat="true" layoutX="556.0" layoutY="223.0" promptText="Clientes" />
+      <JFXButton fx:id="btnVoltar" layoutX="414.0" layoutY="410.0" onAction="#voltar" text="Voltar" textFill="#e8d108" />
+      <JFXButton fx:id="btnLocar" layoutX="525.0" layoutY="410.0" onAction="#locarVeiculo" text="Locar" textFill="#19eb0a" />
+      <ImageView fitHeight="186.0" fitWidth="395.0" layoutX="5.0" layoutY="-1.0" styleClass="backLocacao">
+         <image>
+            <Image url="@../../../../../resources/img/vans2.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

@@ -1,26 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTabPane?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Tab?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="374.0" stylesheets="@../../../../../resources/css/richard.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.locadoraVeiculos.controller">
+<AnchorPane fx:id="anchor" prefHeight="356.0" prefWidth="477.0" stylesheets="@../../../../../resources/css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.locadoraVeiculos.controller.LoginController">
    <children>
-      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="7.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../resources/img/login.jpg" />
-         </image>
-      </ImageView>
-      <JFXTextField fx:id="txtLogin" labelFloat="true" layoutX="198.0" layoutY="64.0" promptText="Login" />
-      <JFXPasswordField fx:id="txtPwd" labelFloat="true" layoutX="198.0" layoutY="114.0" promptText="Password" />
-      <JFXProgressBar layoutX="-1.0" layoutY="237.0" prefHeight="11.0" prefWidth="374.0" />
-      <JFXButton fx:id="btnCadastrar" layoutX="205.0" layoutY="188.0" text="Cadastrar" textFill="#19eb0a" />
-      <JFXButton fx:id="btnLogin" layoutX="295.0" layoutY="188.0" text="Login" textFill="#19eb0a" />
-      <JFXComboBox labelFloat="true" layoutX="198.0" layoutY="146.0" promptText="Nivel de Acesso" />
+      <JFXTabPane layoutX="32.0" layoutY="12.0" prefHeight="332.0" prefWidth="413.0">
+         <tabs>
+            <Tab text="Login">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="244.0" prefWidth="359.0" stylesheets="D:\Git\Locadora_Veiculos\br.com.locadoraVeiculos\src\main\resources\css/login.css">
+                     <children>
+                        <AnchorPane prefHeight="296.0" prefWidth="413.0" stylesheets="@../../../../../resources/css/login.css">
+                           <children>
+                              <JFXTextField fx:id="txtLogin" focusColor="#11bc66" labelFloat="true" layoutX="140.0" layoutY="75.0" promptText="Login" unFocusColor="WHITE" />
+                              <JFXPasswordField fx:id="txtPwd" focusColor="#11bc66" labelFloat="true" layoutX="140.0" layoutY="148.0" promptText="Password" unFocusColor="WHITE" />
+                              <JFXButton fx:id="btnLogin" layoutX="274.0" layoutY="198.0" onAction="#logar" text="Login" textFill="#19eb0a" />
+                              <JFXCheckBox fx:id="checkLogin" layoutX="140.0" layoutY="229.0" text="Lembre-me" />
+                              <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="73.0" layoutY="135.0" styleClass="backKey">
+                                 <image>
+                                    <Image url="@../../../../../resources/img/key2.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="68.0" layoutY="57.0" styleClass="backUser">
+                                 <image>
+                                    <Image url="@../../../../../resources/img/user.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXProgressBar layoutY="266.0" prefHeight="9.0" prefWidth="413.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="txtEmail" text="Registre-se">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="288.0" prefWidth="403.0" stylesheets="@../../../../../resources/css/login.css">
+                     <children>
+                        <ImageView fitHeight="133.0" fitWidth="125.0" layoutX="24.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" styleClass="backLogin">
+                           <image>
+                              <Image url="@../../../../../resources/img/login.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField focusColor="#0cd6ae" labelFloat="true" layoutX="207.0" layoutY="78.0" promptText="E-mail" unFocusColor="WHITE" />
+                        <JFXTextField fx:id="txtSenha" focusColor="#0cd6ae" labelFloat="true" layoutX="207.0" layoutY="119.0" promptText="Password" unFocusColor="WHITE" />
+                        <JFXButton fx:id="btnCadastrar" layoutX="306.0" layoutY="234.0" onAction="#cadastrar" text="Cadastrar" textFill="#099e3a" />
+                        <JFXComboBox fx:id="comboNivelAcesso" focusColor="#0cd6ae" labelFloat="true" layoutX="216.0" layoutY="169.0" promptText="Nivel de Acesso" unFocusColor="WHITE" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
    </children>
 </AnchorPane>

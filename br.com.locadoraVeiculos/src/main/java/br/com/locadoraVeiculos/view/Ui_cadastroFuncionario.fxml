@@ -10,14 +10,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="682.0" stylesheets="@../../../../../resources/css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.locadoraVeiculos.controller.CadastrarFuncionarioController">
    <children>
-      <ImageView fitHeight="188.0" fitWidth="200.0" layoutX="15.0" layoutY="19.0">
+      <ImageView fitHeight="116.0" fitWidth="206.0" layoutX="14.0" layoutY="323.0" styleClass="backEndereco">
          <image>
-            <Image url="@../../../../../resources/img/cadastro-clientes.png" />
+            <Image url="@../../../../../resources/img/endereco2.png" />
          </image>
       </ImageView>
-      <Text layoutX="273.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadstro de Funcionarios">
+      <Text fill="WHITE" layoutX="273.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadstro de Funcionarios">
          <font>
             <Font name="Gabriola" size="41.0" />
          </font>
@@ -27,25 +27,25 @@
             <Font name="Gabriola" size="41.0" />
          </font>
       </Text>
-      <Separator layoutX="3.0" layoutY="257.0" prefHeight="25.0" prefWidth="592.0" />
-      <ImageView fitHeight="120.0" fitWidth="188.0" layoutX="6.0" layoutY="323.0">
+      <Separator layoutX="3.0" layoutY="257.0" prefHeight="25.0" prefWidth="682.0" />
+      <JFXTextField fx:id="txtNome" focusColor="#18dd81" labelFloat="true" layoutX="273.0" layoutY="94.0" promptText="Nome" />
+      <JFXTextField fx:id="txtRg" focusColor="#18dd81" labelFloat="true" layoutX="273.0" layoutY="137.0" promptText="RG" />
+      <JFXTextField fx:id="txtCpf" focusColor="#18dd81" labelFloat="true" layoutX="273.0" layoutY="183.0" promptText="CPF" />
+      <JFXTextField fx:id="txtCtps" focusColor="#18dd81" labelFloat="true" layoutX="439.0" layoutY="183.0" promptText="CTPS" />
+      <JFXTextField fx:id="txtFuncao" focusColor="#18dd81" labelFloat="true" layoutX="439.0" layoutY="94.0" promptText="Função" />
+      <JFXTextField fx:id="txtTelefone" focusColor="#18dd81" labelFloat="true" layoutX="439.0" layoutY="137.0" promptText="Telefone" />
+      <JFXTextField fx:id="txtRua" focusColor="#18dd81" labelFloat="true" layoutX="252.0" layoutY="298.0" promptText="Rua" />
+      <JFXButton fx:id="btnVoltar" layoutX="558.0" layoutY="409.0" onAction="#voltar" text="Voltar" textFill="#ffbb00" />
+      <JFXTextField fx:id="txtBairro" focusColor="#18dd81" labelFloat="true" layoutX="252.0" layoutY="345.0" promptText="Bairro" />
+      <JFXComboBox fx:id="comboCidade" labelFloat="true" layoutX="479.0" layoutY="298.0" promptText="Cidade" />
+      <JFXComboBox fx:id="comboEstado" layoutX="479.0" layoutY="345.0" promptText="Estado" />
+      <JFXButton fx:id="btnCadastar" layoutX="450.0" layoutY="409.0" onAction="#cadastrarFuncionario" text="Cadastar" textFill="#48dd0c" />
+      <JFXButton fx:id="btnAtualizar" layoutX="337.0" layoutY="409.0" onAction="#atualizarFuncionario" text="Atualizar" textFill="#ffd400" />
+      <JFXButton fx:id="btnDeletar" layoutX="230.0" layoutY="409.0" onAction="#deletarFuncionario" text="Deletar" textFill="#ff1500" />
+      <ImageView fitHeight="235.0" fitWidth="242.0" layoutX="10.0" layoutY="13.0" styleClass="backCadastroFuncionarios">
          <image>
-            <Image url="@../../../../../resources/img/novo-endereço-pemavel-veículos-809x489.png" />
+            <Image url="@../../../../../resources/img/cadastro-clientes.png" />
          </image>
       </ImageView>
-      <JFXTextField focusColor="#18dd81" labelFloat="true" layoutX="273.0" layoutY="94.0" promptText="Nome" />
-      <JFXTextField focusColor="#18dd81" labelFloat="true" layoutX="273.0" layoutY="137.0" promptText="RG" />
-      <JFXTextField focusColor="#18dd81" labelFloat="true" layoutX="273.0" layoutY="183.0" promptText="CPF" />
-      <JFXTextField focusColor="#18dd81" labelFloat="true" layoutX="439.0" layoutY="183.0" promptText="CTPS" />
-      <JFXTextField focusColor="#18dd81" labelFloat="true" layoutX="439.0" layoutY="94.0" promptText="Função" />
-      <JFXTextField focusColor="#18dd81" labelFloat="true" layoutX="439.0" layoutY="137.0" promptText="Telefone" />
-      <JFXTextField focusColor="#18dd81" labelFloat="true" layoutX="252.0" layoutY="298.0" promptText="Rua" />
-      <JFXButton layoutX="509.0" layoutY="409.0" text="Voltar" textFill="#ffbb00" />
-      <JFXTextField focusColor="#18dd81" labelFloat="true" layoutX="252.0" layoutY="345.0" promptText="Bairro" />
-      <JFXComboBox labelFloat="true" layoutX="479.0" layoutY="298.0" promptText="Cidade" />
-      <JFXComboBox layoutX="479.0" layoutY="345.0" promptText="Estado" />
-      <JFXButton layoutX="408.0" layoutY="409.0" text="Cadastar" textFill="#48dd0c" />
-      <JFXButton layoutX="309.0" layoutY="409.0" text="Atualizar" textFill="#ffd400" />
-      <JFXButton layoutX="225.0" layoutY="409.0" text="Deletar" textFill="#ff1500" />
    </children>
 </AnchorPane>

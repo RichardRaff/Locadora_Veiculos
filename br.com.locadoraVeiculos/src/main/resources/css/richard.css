@@ -1,6 +1,9 @@
+
+
+
 .title-pane, .title-pane > .label, .menubar
 {
-	-fx-background-color: #444444;
+	-fx-background-color: #2E2E2E;
 	-fx-text-fill: white;
 }
 .close, .minimize
@@ -91,13 +94,13 @@
 }
 .headers-region, .tab-header-background
 {
-	-fx-background-color: #2E2E2E;
+	-fx-background-color: transparent;
 }
 .tab
 {
 	-fx-background-insets: 0;
 	-fx-background-radius: 0;
-	-fx-background-color: #2E2E2E;
+	-fx-background-color: transparent;
 }
 .tab:hover
 {
@@ -106,13 +109,13 @@
 .tab:selected
 {
 	-fx-focus-color: transparent;
-	-fx-background-color: #3D3D3D;
-	-fx-border-color: #F0544C #F0544C #3D3D3D #F0544C; 
+	-fx-background-color: transparent;
+	-fx-border-color: transparent; 
 	-fx-border-radius: 1;
 }
 .tab-label
 {
-	-fx-text-fill: #B3A9A3;	
+	-fx-text-fill: #000000;	
 	-fx-padding-right: 20;
 }
 .tab-close-button
