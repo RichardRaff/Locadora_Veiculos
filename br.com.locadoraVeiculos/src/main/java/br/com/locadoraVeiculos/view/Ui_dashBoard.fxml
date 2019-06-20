@@ -1,41 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane id="anchor" fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="677.0" stylesheets="@../../../../../resources/css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.locadoraVeiculos.controller.DashController">
    <left>
-      <VBox prefHeight="464.0" prefWidth="150.0" style="-fx-background-color: #daaa0e;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="464.0" prefWidth="150.0" style="-fx-background-color: rgb(13, 167, 218);" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" textAlignment="CENTER" wrappingWidth="155.0703125">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" textAlignment="CENTER" wrappingWidth="153.0703125">
                <font>
-                  <Font name="Cambria" size="30.0" />
+                  <Font name="Gabriola" size="50.0" />
                </font>
             </Text>
-            <HBox prefHeight="73.0" prefWidth="118.0">
-               <padding>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </padding>
-               <children>
-                  <ImageView fitHeight="30.0" fitWidth="36.0">
-                     <image>
-                        <Image url="@../../../../../resources/img/iconfinder_search_107183.png" />
-                     </image>
-                  </ImageView>
-                  <JFXTextField focusColor="WHITE" labelFloat="true" promptText="Buscar" style="-fx-background-color: transparent;" unFocusColor="WHITE" />
-               </children>
-            </HBox>
+            <Button id="btnMenu" fx:id="btnClientes" mnemonicParsing="false" onAction="#clientes" prefHeight="45.0" prefWidth="186.0" text="Clientes">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button id="btnMenu" fx:id="btnFuncionarios" layoutX="10.0" layoutY="46.0" mnemonicParsing="false" onAction="#funcionarios" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Funcionários">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button id="btnMenu" fx:id="btnVeiculos" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" onAction="#veiculos" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Veículos">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button id="btnMenu" fx:id="btnLocacao" layoutX="10.0" layoutY="96.0" mnemonicParsing="false" onAction="#locacao" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Locação">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button id="btnMenu" fx:id="btnDevolucao" layoutX="10.0" layoutY="121.0" mnemonicParsing="false" onAction="#devolucao" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Devolução">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button id="btnMenu" fx:id="btnBusca" layoutX="10.0" layoutY="276.0" mnemonicParsing="false" onAction="#busca" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Busca">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Button>
+            <Button id="btnMenu" fx:id="btnExit1" layoutX="10.0" layoutY="281.0" mnemonicParsing="false" onAction="#exit" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Exit">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
          </children>
       </VBox>
    </left>
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+      <VBox prefHeight="200.0" prefWidth="100.0" stylesheets="@../../../../../resources/css/login.css" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

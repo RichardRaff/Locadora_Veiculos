@@ -13,7 +13,7 @@
 
 <AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="629.0" stylesheets="@../../../../../resources/css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.locadoraVeiculos.controller.DevolucaoController">
    <children>
-      <JFXComboBox fx:id="comboMarca" labelFloat="true" layoutX="225.0" layoutY="266.0" promptText="Marca" />
+      <JFXComboBox fx:id="comboMarca" focusColor="#6740a8" labelFloat="true" layoutX="225.0" layoutY="266.0" promptText="Marca" />
       <JFXButton fx:id="btnDevolver" layoutX="360.0" layoutY="373.0" onAction="#devolverVeiculo" text="Devolver" textFill="#19eb0a" />
       <JFXButton fx:id="btnVoltar" layoutX="503.0" layoutY="373.0" onAction="#voltar" text="Voltar" textFill="#e8d108" />
       <JFXComboBox fx:id="comboBuscaCliente" labelFloat="true" layoutX="418.0" layoutY="220.0" promptText="Clientes" />

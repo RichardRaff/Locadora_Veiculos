@@ -1,3 +1,4 @@
+
 #anchor{
  -fx-background-color : linear-gradient(#2258A1,#757575,#BFBFBF);
 }
@@ -62,9 +63,24 @@
 	-fx-min-width: 100px;
 	
 }
+
+
+#btnMenu {
+	-fx-background-color : rgba(0, 0 , 0, 0.2);
+	-fx-background-radius: 2px;	
+	-fx-text-fill: rgb(255, 255, 255);
+}
+
+#btnMenu:hover {
+	-fx-background-color : rgba(255,255,255, 0.5);
+	-fx-background-radius: 2px;	
+	-fx-text-fill: white;
+}
+
+
 .button:hover
 {
-	-fx-background-color: #2E2E2E;
+	-fx-background-color: rgb(122, 244, 22);
 }
 .list-view
 {

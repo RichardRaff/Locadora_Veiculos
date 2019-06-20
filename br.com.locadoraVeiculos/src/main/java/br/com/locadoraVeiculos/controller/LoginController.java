@@ -6,6 +6,7 @@ import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 
+import br.com.locadoraVeiculos.DAO.LoginDAO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Tab;
@@ -47,6 +48,15 @@ public class LoginController {
 
     @FXML
     void logar(ActionEvent event) {
+    	
+    	LoginDAO ld = new LoginDAO();
+    	if(ld.getLogin(txtLogin.getText(), txtSenha.getText())){
+    		// abrir nova janela
+    	} else {
+    		// exibir alerta de login e senha invalidos
+    	}
+    	
+    	
 
     }
 

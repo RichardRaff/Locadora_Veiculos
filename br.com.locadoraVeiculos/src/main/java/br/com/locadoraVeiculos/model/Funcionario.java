@@ -8,6 +8,7 @@ public class Funcionario extends Pessoa {
 	private String carteiraTrabalho;
 	
 	
+	
 	public String getFuncao() {
 		return funcao;
 	}
