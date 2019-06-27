@@ -39,7 +39,7 @@
       <JFXTextField fx:id="txtBairro" focusColor="#18dd81" labelFloat="true" layoutX="252.0" layoutY="345.0" promptText="Bairro" />
       <JFXComboBox fx:id="comboCidade" labelFloat="true" layoutX="479.0" layoutY="298.0" promptText="Cidade" />
       <JFXComboBox fx:id="comboEstado" layoutX="479.0" layoutY="345.0" promptText="Estado" />
-      <JFXButton fx:id="btnCadastar" layoutX="450.0" layoutY="409.0" onAction="#cadastrarFuncionario" text="Cadastar" textFill="#48dd0c" />
+      <JFXButton fx:id="btnCadastrar" layoutX="450.0" layoutY="409.0" onAction="#cadastrarFuncionario" text="Cadastar" textFill="#48dd0c" />
       <JFXButton fx:id="btnAtualizar" layoutX="337.0" layoutY="409.0" onAction="#atualizarFuncionario" text="Atualizar" textFill="#ffd400" />
       <JFXButton fx:id="btnDeletar" layoutX="230.0" layoutY="409.0" onAction="#deletarFuncionario" text="Deletar" textFill="#ff1500" />
       <ImageView fitHeight="235.0" fitWidth="242.0" layoutX="10.0" layoutY="13.0" styleClass="backCadastroFuncionarios">

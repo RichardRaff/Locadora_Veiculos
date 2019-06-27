@@ -5,6 +5,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
+
 import br.com.locadoraVeiculos.model.Login;
 
 public class LoginDAO {
@@ -19,7 +20,7 @@ public class LoginDAO {
 	}
 	
 	public boolean getLogin(String user, String senha) {
-		
+		System.out.println(user+senha);
 		boolean autenticate = false;
 		String sql = "FROM Login c WHERE c.email = :email and c.senha = :pwd";
     	Query sqlLogin = em.createQuery(sql);
@@ -32,6 +33,11 @@ public class LoginDAO {
 		return autenticate;
 	}
 	
+	public void save(Login l) {
+		em.getTransaction().begin();
+		em.persist(l);
+		em.getTransaction().commit();
+	}
 	
 
 }

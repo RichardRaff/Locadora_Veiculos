@@ -1,20 +1,22 @@
 package br.com.locadoraVeiculos.jpa;
 
-import java.sql.Connection;
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class Conexao {
 
-    static Connection conn = null;
+    
+	
     EntityManagerFactory emf = null;
+    EntityManager em;
 
     public Conexao() {
 
         if (emf == null) {
             emf = createEntity();
         } else {
-            getEntity();
+            getEntityFactory();
         }
     }
 
@@ -27,7 +29,13 @@ public class Conexao {
         emf.close();
     }
 
-    public EntityManagerFactory getEntity() {
+    public EntityManagerFactory getEntityFactory() {
         return emf;
     }
+    
+    public EntityManager getEntity() {
+    	return emf.createEntityManager();
+    }
+    
+    
 }

@@ -1,8 +1,12 @@
 package br.com.locadoraVeiculos.DAO;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 import br.com.locadoraVeiculos.model.Cliente;
+import javafx.collections.ObservableList;
 
 public class ClienteDAO {
 	private EntityManager em;
@@ -38,4 +42,22 @@ public class ClienteDAO {
 		em.remove(clienteRemover);
 		em.getTransaction().commit();
 	}
+	public List<Cliente> buscartodos() {
+		em.getTransaction().begin();
+		
+		return (List<Cliente>) em.createQuery("FROM " + Cliente.class.getName()).getResultList();
+	}
+	
+	public List<Cliente> buscarNome(String nome) {
+		em.getTransaction().begin();
+		String busca = "SELECT c FROM Cliente c WHERE c.nome = :nome";
+		Query q = em.createQuery(busca);
+		q.setParameter("nome", nome);
+		List result = q.getResultList();
+		em.getTransaction().commit();
+		em.close();
+		return result;
+		
+	}
+	
 }

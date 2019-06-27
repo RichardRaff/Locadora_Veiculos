@@ -13,17 +13,16 @@
 
 <AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="629.0" stylesheets="@../../../../../resources/css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.locadoraVeiculos.controller.DevolucaoController">
    <children>
-      <JFXComboBox fx:id="comboMarca" focusColor="#6740a8" labelFloat="true" layoutX="225.0" layoutY="266.0" promptText="Marca" />
+      <JFXComboBox fx:id="comboMarca" focusColor="BLACK" labelFloat="true" layoutX="225.0" layoutY="266.0" promptText="Marca" />
       <JFXButton fx:id="btnDevolver" layoutX="360.0" layoutY="373.0" onAction="#devolverVeiculo" text="Devolver" textFill="#19eb0a" />
       <JFXButton fx:id="btnVoltar" layoutX="503.0" layoutY="373.0" onAction="#voltar" text="Voltar" textFill="#e8d108" />
-      <JFXComboBox fx:id="comboBuscaCliente" labelFloat="true" layoutX="418.0" layoutY="220.0" promptText="Clientes" />
-      <JFXComboBox fx:id="comboModelo" labelFloat="true" layoutX="118.0" layoutY="266.0" promptText="Modelo" />
+      <JFXComboBox fx:id="comboBuscaCliente" focusColor="BLACK" labelFloat="true" layoutX="418.0" layoutY="232.0" promptText="Clientes" />
+      <JFXComboBox fx:id="comboModelo" focusColor="BLACK" labelFloat="true" layoutX="118.0" layoutY="266.0" promptText="Modelo" />
       <JFXDatePicker fx:id="buscaData" defaultColor="WHITE" layoutX="14.0" layoutY="204.0" />
       <JFXTimePicker fx:id="buscaHora" defaultColor="WHITE" layoutX="185.0" layoutY="204.0" />
-      <JFXTextField fx:id="txtValorDiaria" labelFloat="true" layoutX="14.0" layoutY="354.0" promptText="Valor da Diaria" />
-      <JFXTextField fx:id="txtBuscaClient" labelFloat="true" layoutX="418.0" layoutY="291.0" promptText="Buscar Cliente" />
-      <JFXTextField fx:id="txtValorFinal" labelFloat="true" layoutX="203.0" layoutY="354.0" promptText="Valor Final" />
-      <JFXComboBox fx:id="comboVeiculo" labelFloat="true" layoutX="14.0" layoutY="266.0" promptText="Veiculo" />
+      <JFXTextField fx:id="txtValorDiaria" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="354.0" promptText="Valor da Diaria" />
+      <JFXTextField fx:id="txtValorFinal" focusColor="BLACK" labelFloat="true" layoutX="203.0" layoutY="354.0" promptText="Valor Final" />
+      <JFXComboBox fx:id="comboVeiculo" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="266.0" promptText="Veiculo" />
       <ImageView fitHeight="182.0" fitWidth="227.0" layoutX="14.0" layoutY="14.0" styleClass="backDevolucao">
          <image>
             <Image url="@../../../../../resources/img/devolucao2.png" />
@@ -34,6 +33,6 @@
             <Font name="Gabriola" size="53.0" />
          </font>
       </Text>
-      <JFXComboBox fx:id="comboDisponibilidade" focusColor="#ea0606" labelFloat="true" layoutX="418.0" layoutY="254.0" promptText="Disponibilidade" />
+      <JFXComboBox fx:id="comboDisponibilidade" focusColor="BLACK" labelFloat="true" layoutX="418.0" layoutY="266.0" promptText="Disponibilidade" />
    </children>
 </AnchorPane>

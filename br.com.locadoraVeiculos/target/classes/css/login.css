@@ -38,14 +38,14 @@
 }
 .context-menu
 {
-	-fx-background-color: #3D3D3D;
+	-fx-background-color: white;
 }
 /*
 	PANE STUFF
 */
 .pane, .hbox, .vbox, .content, .text-area
 {
-	-fx-background-color: #3D3D3D;
+	-fx-background-color: white;
 	-fx-background-radius: 0;
 }
 .pane > .label, .text-area, .hbox > .label, .vbox > .label
@@ -143,24 +143,24 @@
 }
 .table-view
 {
-	-fx-background-color: #2E2E2E;
+	-fx-background-color: white;
 
 	-fx-table-cell-border-color: transparent;
 }
 .table-view > .column-header-background
 {
-	-fx-color: #3D3D3D;
-	-fx-background-color: #3D3D3D;
+	-fx-color: white;
+	-fx-background-color: white;
 	-fx-text-fill: #3D3D3D;
 }
 .table-view > .column-header-background > .column-drag-header
 {
-	-fx-background-color: #3D3D3D;
+	-fx-background-color: white;
 }
 .table-view > .column-header-background > .nested-column-header > .column-header
 {
-	-fx-background-color: #3D3D3D;
-	-fx-text-fill: white;
+	-fx-background-color: white;
+	-fx-text-fill: #3D3D3D;
 }
 .table-view .column-header .label
 {
@@ -181,19 +181,19 @@
 }
 .spinner, .increment-arrow-button, .decrement-arrow-button
 {
-	-fx-background-color: #2E2E2E;
+	-fx-background-color: white;
 	-fx-text-fill: white;
 	-fx-background-radius: 0;
 }
 .spinner > .text-field
 {
-	-fx-background-color: #2E2E2E;
+	-fx-background-color: white;
 	-fx-text-fill: white;
 	-fx-background-radius: 0;
 }
 .scroll-bar
 {
-	-fx-background-color: #3D3D3D;
+	-fx-background-color: white;
 	-fx-color: #2E2E2E;
 	-fx-background-radius: 0;
 }
@@ -229,7 +229,7 @@
 }
 .backLogin
 {
-	-fx-image: url('/img/login.png');
+	-fx-image: url('/img/login.jpg');
 }
 .backDevolucao
 {
@@ -258,4 +258,8 @@
 .backKey
 {
 	-fx-image: url('/img/key2.png');
+}
+.backdash
+{
+	-fx-image: url('/img/dash.png');
 }

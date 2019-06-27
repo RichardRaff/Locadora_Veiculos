@@ -1,5 +1,8 @@
 package br.com.locadoraVeiculos.app;
 
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,14 +25,14 @@ public class LocadoraStart extends Application {
 		//Conexao conn = new Conexao();
 		//conn.getEntity();
 		launch(args);
-		
-
+		//EntityManagerFactory emf = Persistence.createEntityManagerFactory("locadoraPU");		
+		//emf.createEntityManager();
 	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("../view/Ui_login2.fxml"));
-        Scene scene = new Scene(root, 477, 356);
+        Scene scene = new Scene(root, 500, 460);
         scene.getStylesheets().add(getClass().getResource("/css/login.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();

@@ -3,66 +3,45 @@ package br.com.locadoraVeiculos.controller;
 import java.io.IOException;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXComboBox;
-import com.jfoenix.controls.JFXDatePicker;
-import com.jfoenix.controls.JFXTextField;
-import com.jfoenix.controls.JFXTimePicker;
 
-import br.com.locadoraVeiculos.model.Cliente;
-import br.com.locadoraVeiculos.model.Marca;
-import br.com.locadoraVeiculos.model.Modelo;
-import br.com.locadoraVeiculos.model.Veiculo;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class DevolucaoController {
+public class BuscaFuncionarioController {
 
     @FXML
     private AnchorPane anchor;
 
     @FXML
-    private JFXComboBox<Marca> comboMarca;
-
-    @FXML
-    private JFXButton btnDevolver;
-
-    @FXML
     private JFXButton btnVoltar;
 
     @FXML
-    private JFXComboBox<Cliente> comboBuscaCliente;
+    private JFXButton btnBuscar;
 
     @FXML
-    private JFXComboBox<Modelo> comboModelo;
+    private TableView<?> tabelaDeBuscaFuncionario;
 
     @FXML
-    private JFXDatePicker buscaData;
+    private TableColumn<?, ?> tblNome;
 
     @FXML
-    private JFXTimePicker buscaHora;
+    private TableColumn<?, ?> tblCpf;
 
     @FXML
-    private JFXTextField txtValorDiaria;
+    private TableColumn<?, ?> tblCtps;
 
     @FXML
-    private JFXTextField txtBuscaClient;
+    private TableColumn<?, ?> tblTelefone;
 
     @FXML
-    private JFXTextField txtValorFinal;
-
-    @FXML
-    private JFXComboBox<Veiculo> comboVeiculo;
-
-    @FXML
-    private JFXComboBox<Veiculo> comboDisponibilidade;
-
-    @FXML
-    void devolverVeiculo(ActionEvent event) {
+    void buscar(ActionEvent event) {
 
     }
 
@@ -80,7 +59,6 @@ public class DevolucaoController {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-
     }
 
 }

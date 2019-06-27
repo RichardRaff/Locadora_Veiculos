@@ -12,7 +12,6 @@ public class Cidade {
 	@Id
 	@GeneratedValue
 	private int idCidade;
-	private String ufCidade;
 	private String cidade;
 	@ManyToOne
 	private Estado estado;
@@ -23,12 +22,6 @@ public class Cidade {
 	}
 	public void setIdCidade(int idCidade) {
 		this.idCidade = idCidade;
-	}
-	public String getUfCidade() {
-		return ufCidade;
-	}
-	public void setUfCidade(String ufCidade) {
-		this.ufCidade = ufCidade;
 	}
 	public String getCidade() {
 		return cidade;

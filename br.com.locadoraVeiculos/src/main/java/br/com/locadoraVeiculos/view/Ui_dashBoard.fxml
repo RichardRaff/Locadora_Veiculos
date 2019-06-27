@@ -2,6 +2,8 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -41,10 +43,12 @@
                   <Insets />
                </VBox.margin>
             </Button>
-            <Button id="btnMenu" fx:id="btnBusca" layoutX="10.0" layoutY="276.0" mnemonicParsing="false" onAction="#busca" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Busca">
+            <Button id="btnMenu" fx:id="btnBuscaClientes" layoutX="10.0" layoutY="276.0" mnemonicParsing="false" onAction="#buscaClientes" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Busca Clientes">
                <VBox.margin>
                   <Insets />
                </VBox.margin></Button>
+            <Button id="btnMenu" fx:id="btnBuscaFuncionarios" layoutX="10.0" layoutY="285.0" mnemonicParsing="false" onAction="#buscaFuncionarios" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Busca Funcionarios" />
+            <Button id="btnMenu" fx:id="btnBuscaVeiculos" layoutX="10.0" layoutY="375.0" mnemonicParsing="false" onAction="#buscaVeiculos" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Busca Veiculos" />
             <Button id="btnMenu" fx:id="btnExit1" layoutX="10.0" layoutY="281.0" mnemonicParsing="false" onAction="#exit" prefHeight="45.0" prefWidth="178.0" styleClass="btnMenu" text="Exit">
                <VBox.margin>
                   <Insets />
@@ -54,6 +58,10 @@
       </VBox>
    </left>
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" stylesheets="@../../../../../resources/css/login.css" BorderPane.alignment="CENTER" />
+      <ImageView fitHeight="344.0" fitWidth="415.0" styleClass="backdash" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../../resources/img/dash.png" />
+         </image>
+      </ImageView>
    </center>
 </BorderPane>

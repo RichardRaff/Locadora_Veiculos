@@ -37,7 +37,7 @@
       <JFXTextField fx:id="txtRua" labelFloat="true" layoutX="251.0" layoutY="298.0" promptText="Rua" />
       <JFXTextField fx:id="txtBairro" labelFloat="true" layoutX="251.0" layoutY="358.0" promptText="Bairro" />
       <JFXComboBox fx:id="comboCidade" labelFloat="true" layoutX="441.0" layoutY="298.0" promptText="Cidade" />
-      <JFXComboBox fx:id="comboEstado" labelFloat="true" layoutX="441.0" layoutY="358.0" promptText="Estado" />
+      <JFXComboBox fx:id="comboEstado" labelFloat="true" layoutX="441.0" layoutY="358.0" onAction="#selecionaEstado" promptText="Estado" />
       <JFXButton fx:id="btnVoltar" layoutX="579.0" layoutY="409.0" onAction="#voltar" text="Voltar" textFill="#ffd000" />
       <JFXButton fx:id="btnDeletar" layoutX="468.0" layoutY="409.0" onAction="#deletarCliente" text="Deletar" textFill="#75e80a" />
       <JFXButton fx:id="btnAtualizar" layoutX="362.0" layoutY="409.0" onAction="#atualizarCliente" text="Atualizar" textFill="#ffea00" />
