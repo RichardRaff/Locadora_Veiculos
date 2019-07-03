@@ -1,12 +1,8 @@
 package br.com.locadoraVeiculos.app;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import br.com.locadoraVeiculos.jpa.Conexao;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -31,7 +27,7 @@ public class LocadoraStart extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("../view/Ui_login2.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("../view/Ui_dashBoard.fxml"));
         Scene scene = new Scene(root, 500, 460);
         scene.getStylesheets().add(getClass().getResource("/css/login.css").toExternalForm());
         primaryStage.setScene(scene);

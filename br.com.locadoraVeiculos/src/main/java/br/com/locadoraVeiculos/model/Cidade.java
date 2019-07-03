@@ -4,10 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="tb_cidade")
+@NamedQuery(name="Cidade.getCidades",
+			query = "SELECT c FROM Cidade c WHERE c.estado = :Estado")
 public class Cidade {
 	@Id
 	@GeneratedValue
@@ -34,6 +37,12 @@ public class Cidade {
 	}
 	public void setEstado(Estado estado) {
 		this.estado = estado;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return cidade;
 	}
 	
 	

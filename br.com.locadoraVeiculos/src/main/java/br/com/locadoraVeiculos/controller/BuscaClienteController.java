@@ -60,7 +60,7 @@ public class BuscaClienteController {
     	ClienteDAO cldao = new ClienteDAO();
     	ObservableList<Cliente> listaClientes = FXCollections.observableArrayList(cldao.buscarNome(buscas));
     	tabelaDeBuscaCliente.setItems(listaClientes);
-    	System.out.println(listaClientes);
+    	System.out.println(listaClientes.size());
     	
     	
 

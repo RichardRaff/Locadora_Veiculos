@@ -42,10 +42,11 @@ public class ClienteDAO {
 		em.remove(clienteRemover);
 		em.getTransaction().commit();
 	}
-	public List<Cliente> buscartodos() {
+	@SuppressWarnings("unchecked")
+	public List<Cliente> buscarTodos() {
 		em.getTransaction().begin();
 		
-		return (List<Cliente>) em.createQuery("FROM " + Cliente.class.getName()).getResultList();
+		return em.createQuery("FROM " + Cliente.class.getName()).getResultList();
 	}
 	
 	public List<Cliente> buscarNome(String nome) {

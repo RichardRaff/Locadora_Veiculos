@@ -3,10 +3,13 @@ package br.com.locadoraVeiculos.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="tb_Estado")
+@NamedQuery(name="Estado.getIdEstado",
+query = "SELECT e FROM Estado e WHERE e.estado = :estado")
 public class Estado {
 	
 	@Id
@@ -33,6 +36,12 @@ public class Estado {
 	}
 	public void setEstado(String estado) {
 		this.estado = estado;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.estado;
 	}
 	
 
