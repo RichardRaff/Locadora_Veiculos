@@ -23,7 +23,7 @@ public class CidadeDAO {
 	public Cidade getByName(String cidadeCombo) {
 		em.getTransaction().begin();
 		TypedQuery<Cidade> queryCidade = em.createNamedQuery("Cidade.getIdCidade", Cidade.class);
-		queryCidade.setParameter("cidade", cidadeCombo);
+		queryCidade.setParameter("city", cidadeCombo);
 		return queryCidade.getSingleResult();
 		
 	}

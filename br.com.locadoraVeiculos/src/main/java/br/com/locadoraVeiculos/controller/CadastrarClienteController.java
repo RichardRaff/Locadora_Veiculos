@@ -88,10 +88,8 @@ public class CadastrarClienteController implements Initializable {
 
 	@FXML
 	void cadastrarCliente(ActionEvent event) {
-
-		if (txtNome.getText().equals("") && txtCpf.getText().equals("") && txtCnh.getText().equals("")
-				&& txtRg.getText().equals("") && txtTelefone.getText().equals("") && txtRua.getText().equals("")
-				&& txtBairro.getText().equals("")) {
+	 if (txtNome.getText().equals("") && txtCpf.getText().equals("") && txtCnh.getText().equals("")
+	 && txtRg.getText().equals("") && txtTelefone.getText().equals("") && txtRua.getText().equals("")&& txtBairro.getText().equals("")) {
 			Alert msg = new Alert(AlertType.ERROR);
 			msg.setContentText("Por Favor Preencha Todos os Campos! ");
 			msg.setHeaderText("Erro na Autenticação ");
@@ -119,15 +117,7 @@ public class CadastrarClienteController implements Initializable {
 			cl.setTelefone(txtTelefone.getText());
 			cl.setEndereco(e);
 
-			// EnderecoDAO edao = new EnderecoDAO();
-			// edao.save(e);
-
-			// CidadeDAO cdao = new CidadeDAO();
-			// cdao.save(c);
-
-			// EstadoDAO esdao = new EstadoDAO();
-			// esdao.save(es);
-
+	
 			ClienteDAO cldao = new ClienteDAO();
 			cldao.save(cl);
 
@@ -168,8 +158,6 @@ public class CadastrarClienteController implements Initializable {
 		
 		System.out.println(estadoSelecionado.getIdEstado());
 		
-		//LOG.info(daoCidade.getCidadesById().size());
-		
 		ObservableList<Cidade> cities = 
 				FXCollections.observableArrayList(daoCidade.getCidadesById(daoEstado.getById(estadoSelecionado.getIdEstado())));
 		
@@ -185,7 +173,7 @@ public class CadastrarClienteController implements Initializable {
 		
 		System.out.println(cidadeSelecionada.getIdCidade());
 		
-		//LOG.info(daoCidade.getCidadesById().size());
+		
 		
 		ObservableList<Cidade> cities = 
 				FXCollections.observableArrayList(daoCidade.getCidadesById(daoEstado.getById(cidadeSelecionada.getIdCidade())));
@@ -213,12 +201,6 @@ public class CadastrarClienteController implements Initializable {
 
 	}
 
-//    @FXML
-//    void selecionaEstado(MouseEvent event) {
-//    	if(event.)
-//    	LOG.info(this.comboEstado.getValue());
-//
-//    }
 
 	public void initialize(URL arg0, ResourceBundle arg1) {
 
@@ -237,5 +219,5 @@ public class CadastrarClienteController implements Initializable {
 		}
 
 	}
-
+	
 }

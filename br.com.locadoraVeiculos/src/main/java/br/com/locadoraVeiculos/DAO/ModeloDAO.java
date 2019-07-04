@@ -1,6 +1,9 @@
 package br.com.locadoraVeiculos.DAO;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 
 import br.com.locadoraVeiculos.model.Modelo;
 
@@ -39,5 +42,24 @@ private EntityManager em;
 		Modelo modeloRemover = getById(m.getIdModelo());
 		em.remove(modeloRemover);
 		em.getTransaction().commit();
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Modelo> buscarTodos() {
+		em.getTransaction().begin();
+		
+		return em.createQuery("FROM " + Modelo.class.getName()).getResultList();
+	}
+	
+	public List<Modelo> buscarNome(String modelo) {
+		em.getTransaction().begin();
+		String busca = "SELECT c FROM Modelo c WHERE c.modelo = :modelo";
+		Query q = em.createQuery(busca);
+		q.setParameter("modelo", modelo);
+		List result = q.getResultList();
+		em.getTransaction().commit();
+		em.close();
+		return result;
+		
 	}
 }

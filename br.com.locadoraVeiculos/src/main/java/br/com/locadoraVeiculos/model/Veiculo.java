@@ -1,10 +1,13 @@
 package br.com.locadoraVeiculos.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name="tb_veiculo")
@@ -26,7 +29,7 @@ public class Veiculo {
 	private String tipoVeiculo;
 	private int disponibilidade;
 	
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private Modelo modelo;
 
 	public int getIdVeiculos() {

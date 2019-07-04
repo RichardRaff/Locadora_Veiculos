@@ -29,15 +29,15 @@
       </Text>
       <Separator prefWidth="200.0" />
       <Separator layoutX="3.0" layoutY="257.0" prefHeight="25.0" prefWidth="693.0" />
-      <JFXTextField fx:id="txtNome" labelFloat="true" layoutX="277.0" layoutY="89.0" promptText="Nome" />
-      <JFXTextField fx:id="txtRg" labelFloat="true" layoutX="277.0" layoutY="137.0" promptText="RG" />
-      <JFXTextField fx:id="txtCpf" labelFloat="true" layoutX="277.0" layoutY="182.0" promptText="CPF" />
-      <JFXTextField fx:id="txtCnh" labelFloat="true" layoutX="451.0" layoutY="89.0" promptText="CNH" />
-      <JFXTextField fx:id="txtTelefone" labelFloat="true" layoutX="450.0" layoutY="143.0" promptText="Telefone" />
-      <JFXTextField fx:id="txtRua" labelFloat="true" layoutX="251.0" layoutY="298.0" promptText="Rua" />
-      <JFXTextField fx:id="txtBairro" labelFloat="true" layoutX="251.0" layoutY="358.0" promptText="Bairro" />
-      <JFXComboBox fx:id="comboCidade" editable="true" labelFloat="true" layoutX="429.0" layoutY="358.0" promptText="Cidade" />
-      <JFXComboBox fx:id="comboEstado" editable="true" labelFloat="true" layoutX="429.0" layoutY="298.0" onAction="#selecionaEstado" promptText="Estado" />
+      <JFXTextField fx:id="txtNome" focusColor="BLACK" labelFloat="true" layoutX="277.0" layoutY="89.0" promptText="Nome" />
+      <JFXTextField fx:id="txtRg" focusColor="BLACK" labelFloat="true" layoutX="277.0" layoutY="137.0" promptText="RG" />
+      <JFXTextField fx:id="txtCpf" focusColor="BLACK" labelFloat="true" layoutX="277.0" layoutY="182.0" promptText="CPF" />
+      <JFXTextField fx:id="txtCnh" focusColor="BLACK" labelFloat="true" layoutX="451.0" layoutY="89.0" promptText="CNH" />
+      <JFXTextField fx:id="txtTelefone" focusColor="BLACK" labelFloat="true" layoutX="450.0" layoutY="143.0" promptText="Telefone" />
+      <JFXTextField fx:id="txtRua" focusColor="BLACK" labelFloat="true" layoutX="251.0" layoutY="298.0" promptText="Rua" />
+      <JFXTextField fx:id="txtBairro" focusColor="BLACK" labelFloat="true" layoutX="251.0" layoutY="358.0" promptText="Bairro" />
+      <JFXComboBox fx:id="comboCidade" editable="true" focusColor="BLACK" labelFloat="true" layoutX="429.0" layoutY="358.0" promptText="Cidade" />
+      <JFXComboBox fx:id="comboEstado" editable="true" focusColor="BLACK" labelFloat="true" layoutX="429.0" layoutY="298.0" onAction="#selecionaEstado" promptText="Estado" />
       <JFXButton fx:id="btnVoltar" layoutX="579.0" layoutY="409.0" onAction="#voltar" text="Voltar" textFill="#ffd000" />
       <JFXButton fx:id="btnDeletar" layoutX="468.0" layoutY="409.0" onAction="#deletarCliente" text="Deletar" textFill="#75e80a" />
       <JFXButton fx:id="btnAtualizar" layoutX="362.0" layoutY="409.0" onAction="#atualizarCliente" text="Atualizar" textFill="#ffea00" />

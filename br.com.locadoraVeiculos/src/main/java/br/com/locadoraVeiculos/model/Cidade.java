@@ -11,6 +11,10 @@ import javax.persistence.Table;
 @Table(name="tb_cidade")
 @NamedQuery(name="Cidade.getCidades",
 			query = "SELECT c FROM Cidade c WHERE c.estado = :Estado")
+
+@NamedQuery(name="Cidade.getIdCidade",
+query = "SELECT c FROM Cidade c WHERE c.cidade = :city")
+
 public class Cidade {
 	@Id
 	@GeneratedValue

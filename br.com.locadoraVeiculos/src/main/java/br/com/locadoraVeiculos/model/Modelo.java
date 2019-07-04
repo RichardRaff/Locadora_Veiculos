@@ -1,10 +1,12 @@
 package br.com.locadoraVeiculos.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name="tb_modelo")
@@ -13,7 +15,7 @@ public class Modelo {
 	@GeneratedValue
 	private int idModelo;
 	private String descricao;
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	private Marca marca;
 	
 	
@@ -34,6 +36,11 @@ public class Modelo {
 	}
 	public void setMarca(Marca marca) {
 		this.marca = marca;
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return descricao;
 	}
 
 }

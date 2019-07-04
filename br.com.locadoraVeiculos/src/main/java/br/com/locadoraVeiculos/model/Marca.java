@@ -28,6 +28,10 @@ public class Marca {
 		}
 		
 	
-	
+		@Override
+		public String toString() {
+			// TODO Auto-generated method stub
+			return descricacao;
+		}
 	
 }

@@ -28,17 +28,17 @@
          </font>
       </Text>
       <Separator layoutX="3.0" layoutY="257.0" prefHeight="25.0" prefWidth="682.0" />
-      <JFXTextField fx:id="txtNome" focusColor="#18dd81" labelFloat="true" layoutX="273.0" layoutY="94.0" promptText="Nome" />
-      <JFXTextField fx:id="txtRg" focusColor="#18dd81" labelFloat="true" layoutX="273.0" layoutY="137.0" promptText="RG" />
-      <JFXTextField fx:id="txtCpf" focusColor="#18dd81" labelFloat="true" layoutX="273.0" layoutY="183.0" promptText="CPF" />
-      <JFXTextField fx:id="txtCtps" focusColor="#18dd81" labelFloat="true" layoutX="439.0" layoutY="183.0" promptText="CTPS" />
-      <JFXTextField fx:id="txtFuncao" focusColor="#18dd81" labelFloat="true" layoutX="439.0" layoutY="94.0" promptText="Função" />
-      <JFXTextField fx:id="txtTelefone" focusColor="#18dd81" labelFloat="true" layoutX="439.0" layoutY="137.0" promptText="Telefone" />
-      <JFXTextField fx:id="txtRua" focusColor="#18dd81" labelFloat="true" layoutX="252.0" layoutY="298.0" promptText="Rua" />
+      <JFXTextField fx:id="txtNome" focusColor="BLACK" labelFloat="true" layoutX="273.0" layoutY="94.0" promptText="Nome" />
+      <JFXTextField fx:id="txtRg" focusColor="BLACK" labelFloat="true" layoutX="273.0" layoutY="137.0" promptText="RG" />
+      <JFXTextField fx:id="txtCpf" focusColor="BLACK" labelFloat="true" layoutX="277.0" layoutY="183.0" promptText="CPF" />
+      <JFXTextField fx:id="txtCtps" focusColor="BLACK" labelFloat="true" layoutX="439.0" layoutY="183.0" promptText="CTPS" />
+      <JFXTextField fx:id="txtFuncao" focusColor="BLACK" labelFloat="true" layoutX="439.0" layoutY="94.0" promptText="Função" />
+      <JFXTextField fx:id="txtTelefone" focusColor="BLACK" labelFloat="true" layoutX="439.0" layoutY="137.0" promptText="Telefone" />
+      <JFXTextField fx:id="txtRua" focusColor="BLACK" labelFloat="true" layoutX="252.0" layoutY="298.0" promptText="Rua" />
       <JFXButton fx:id="btnVoltar" layoutX="558.0" layoutY="409.0" onAction="#voltar" text="Voltar" textFill="#ffbb00" />
-      <JFXTextField fx:id="txtBairro" focusColor="#18dd81" labelFloat="true" layoutX="252.0" layoutY="345.0" promptText="Bairro" />
-      <JFXComboBox fx:id="comboCidade" labelFloat="true" layoutX="479.0" layoutY="298.0" promptText="Cidade" />
-      <JFXComboBox fx:id="comboEstado" layoutX="479.0" layoutY="345.0" promptText="Estado" />
+      <JFXTextField fx:id="txtBairro" focusColor="BLACK" labelFloat="true" layoutX="252.0" layoutY="345.0" promptText="Bairro" />
+      <JFXComboBox fx:id="comboCidade" focusColor="BLACK" labelFloat="true" layoutX="467.0" layoutY="345.0" promptText="Cidade" />
+      <JFXComboBox fx:id="comboEstado" focusColor="BLACK" layoutX="472.0" layoutY="290.0" onAction="#selecionaEstado" promptText="Estado" />
       <JFXButton fx:id="btnCadastrar" layoutX="450.0" layoutY="409.0" onAction="#cadastrarFuncionario" text="Cadastar" textFill="#48dd0c" />
       <JFXButton fx:id="btnAtualizar" layoutX="337.0" layoutY="409.0" onAction="#atualizarFuncionario" text="Atualizar" textFill="#ffd400" />
       <JFXButton fx:id="btnDeletar" layoutX="230.0" layoutY="409.0" onAction="#deletarFuncionario" text="Deletar" textFill="#ff1500" />

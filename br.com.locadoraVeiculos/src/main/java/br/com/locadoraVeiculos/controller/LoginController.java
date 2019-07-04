@@ -9,6 +9,7 @@ import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 
 import br.com.locadoraVeiculos.DAO.LoginDAO;
+import br.com.locadoraVeiculos.model.Login;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -38,19 +39,51 @@ public class LoginController {
     private JFXCheckBox checkLogin;
 
     @FXML
-    private Tab txtEmail;
+    private JFXTextField txtEmail;
 
     @FXML
-    private JFXTextField txtSenha;
+    private JFXPasswordField txtSenha;
 
     @FXML
     private JFXButton btnCadastrar;
 
-    @FXML
-    private JFXComboBox<?> comboNivelAcesso;
+   // @FXML
+    //private JFXComboBox<String> comboNivelAcesso;
 
     @FXML
     void cadastrar(ActionEvent event) {
+    	if(txtEmail.getText().equals("") && txtSenha.getText().equals("")) {
+    		
+    		Alert msg = new Alert(AlertType.ERROR);
+			msg.setContentText("Por Favor Preencha Todos os Campos! ");
+			msg.setHeaderText("Erro na Autenticação ");
+			msg.show();
+    	}else {
+    		Login lg = new Login();
+    		lg.setEmail(txtEmail.getText());
+    		lg.setSenha(txtSenha.getText());
+    		
+    		LoginDAO ldao = new LoginDAO();
+    		ldao.save(lg);
+    		
+    		Alert msg = new Alert(AlertType.INFORMATION);
+			msg.setContentText("Dados Salvos! ");
+			msg.setHeaderText("Exito no Cadastro ");
+			msg.show();
+    		
+			Stage stage = (Stage) btnCadastrar.getScene().getWindow();
+			Parent root;
+			try {
+				root = FXMLLoader.load(getClass().getResource("../view/Ui_login2.fxml"));
+				Scene scene = new Scene(root, 500, 460);
+				scene.getStylesheets().add(getClass().getResource("/css/login.css").toExternalForm());
+				stage.setScene(scene);
+				stage.show();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+    	}
     	
 
     }

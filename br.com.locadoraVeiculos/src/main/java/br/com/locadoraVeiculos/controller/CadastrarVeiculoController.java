@@ -125,12 +125,14 @@ public class CadastrarVeiculoController implements Initializable {
 			v.setArCondicionado(comboArCond.getValue());
 			v.setTipoCombustivel(comboTipoCombustivel.getValue());
 			v.setNumPortas(Integer.parseInt(comboNumPostas.getValue()));
+			v.setModelo(mo);
+			
 			if(comboDisponibilidade.equals("Sim")) {
 				v.setDisponibilidade(1);
 			}else {
 				v.setDisponibilidade(0);
 			}
-			v.setModelo(mo);
+			
 
 			VeiculoDAO vdao = new VeiculoDAO();
 			vdao.save(v);
